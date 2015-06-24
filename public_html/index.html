@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>header template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                line-height: 1.5em;
+                background-color: #00795f;
+                background-image: url(images/global.jpg);
+            }
+            #container {
+                width: 95%;
+                background-color:  #dff0d8;
+                margin: 0 auto;
+                padding: 30px 30px 30px 30px;
+            }
+            h1 {
+                background-color: #00795f;
+                width: 100%;
+                padding: 40px 0;
+                color: white;
+                text-align: center;
+            }
+            nav ul {
+                background-color: #43a286;
+                overflow: hidden;
+                color: white;
+                padding: 0;
+                text-align: center;
+                margin: 0;
+            
+         
+                
+            }
+            a  {
+                color: white;
+                display: inline-block;
+                padding: 20px;
+                
+            }
+             li {
+                color: white;
+                display: inline-block;
+                padding: 20px;
+                transition: all 2s ease-in-out;
+            }
+           
+            
+            nav ul li  {
+                transition: all 1s ease-in-out;
+            }
+            nav ul li:hover {
+                background-color: #00795f;
+                 -webkit-transform: rotateZ(360deg);
+            }
+            #nav {
+                margin: none;
+            }
+            #nav1 {
+                margin-bottom: 10px;
+            }
+            .handle {
+                width: 100%;
+                background-color: #005c48;
+                box-sizing: border-box;
+                text-align: center;
+                cursor: pointer;
+                display: none;
+            }
+            
+            .hide a{ text-align: right}
+            .par {
+                width: 33.33%;
+                box-sizing: border-box;
+                padding: 4% 4% 4% 4%;
+                float: left;
+                background-color: #dff0d8;
+                line-height: 1.5em;
+                transition: all 1s ease-in-out;
+                height: 60%;
+                font-size: 18px;
+               
+            }
+            .par:hover {
+                font-size: 26px;
+                color: #285e8e;
+                //transform: scale(1.2);
+               // transform: skew(-10deg);
+               // transform: skew(10deg);
+               transform: rotate(720deg);
+            }
+            .footer ul {
+                width: 33.33%;
+                box-sizing: border-box;
+                float: left;
+                display: block;
+                padding: 4% 4% 4% 10%;
+            }
+            footer li {
+                display: block;
+                margin-right: 10%;
+               
+                
+            }
+            footer {
+                display: block;
+                text-align: center;
+                
+            }
+           #dropdown 
+                	 {
+		    height: 50px;
+		    width: 120px;
+		    color: white;
+		    background-color: black;
+		    border-style: 1px solid black;
+		    border-radius: 5px;
+		    margin: auto;
+		    text-align: center;
+		    text-decoration: none;
+		}
+                .footer li {
+                    color: #212121;
+                    font-size: 18px;
+                }
+            
+            @media screen and (max-width: 500px) {
+                  li{
+                    width: 100%;
+                    text-align: left;
+                }
+                a {
+                    width: 100%;
+                    text-align: left;
+                }
+                .handle {
+                    display: block;
+                }
+                .hide {
+                    display: none;
+                }
+                .par {
+                    width: 100%;
+                    padding: 4% 4% 4% 4%;
+                }
+                p {
+                    width: 100%;
+                }
+                .footer {
+                    width: 100%;
+                }
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="container">
+        <div id ="slide">
+        <nav id = "nav1">
+            <ul class = "ul">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Weather</a></li>
+                <li><a href="#">Traffic</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Random</a></li>
+
+            </ul>
+
+        </nav>
+        <nav id ="hide">
+            <ul class = "ul2">
+               <li><a href="#">News</a></li>
+                <li><a href="#">Weather</a></li>
+                <li><a href="#">Traffic</a></li>
+                <li><a href="#">Sales</a></li>
+               
+
+            </ul>
+             </nav>
+        </div>
+            <div class ="handle">Menu
+                <button id ="dropdown">dropdown</button></div>
+        
+        <h1 id = "nav">Header Template</h1>
+        <p class = "par">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        </p>
+         <p class = "par">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        </p>
+         <p class = "par">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        </p>
+        </div>
+        <div id ='footer'>
+            <div class = "footer left">
+                <ul>
+                    <li><a href = "#">About us</a></li><br>
+                    <li><a href = "#">Contact</a></li><br>
+                     <li><a href = "#">News</a></li><br>
+                      <li><a href = "#">Help</a></li><br>
+                </ul>
+            </div>
+            
+             <div class = "footer center">
+                <ul>
+                    <li>twitter</li><br>
+                    <li>facebook</li><br>
+                    <li>instagram</li><br>
+                    
+                </ul>
+            </div>
+            
+             <div class = "footer right">
+                <ul>
+                   
+                    <li>New York</li><br>
+                    <li>Milan</li><br><br>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        <script src='js/libs/jquery/jquery.js'></script>
+        <script src='js/app.js'></script>
+    </body>
+</html>
