@@ -17,12 +17,16 @@ and open the template in the editor.
                 line-height: 1.5em;
                 background-color: #00795f;
                 background-image: url(images/global.jpg);
+                vertical-align: middle;
             }
             #container {
                 width: 95%;
                 background-color:  #dff0d8;
                 margin: 0 auto;
                 padding: 30px 30px 30px 30px;
+                margin-top: 100px;
+                
+                
             }
             h1 {
                 background-color: #00795f;
@@ -42,6 +46,7 @@ and open the template in the editor.
          
                 
             }
+            
             a  {
                 color: white;
                 display: inline-block;
@@ -69,6 +74,11 @@ and open the template in the editor.
             #nav1 {
                 margin-bottom: 10px;
             }
+            #form {
+                padding-top: 10px;
+                display: inline;
+            }
+            
             .handle {
                 width: 100%;
                 background-color: #005c48;
@@ -106,13 +116,17 @@ and open the template in the editor.
                 display: block;
                 padding: 4% 4% 4% 10%;
             }
-            footer li {
+            .footer a {
                 display: block;
                 margin-right: 10%;
+                transition: all 2s ease-in-out;
                
                 
             }
-            footer {
+            .footer a:hover {
+                transform: rotateY(360deg);
+            }
+            .footer {
                 display: block;
                 text-align: center;
                 
@@ -123,26 +137,39 @@ and open the template in the editor.
 		    width: 120px;
 		    color: white;
 		    background-color: black;
-		    border-style: 1px solid black;
+		    
+		    
+		    margin: auto;
+		    text-align: center;
+		    text-decoration: none;
+                    padding: 5px 20px 5px 20px;
+		}
+                 #getform
+                	 {
+		    height: 50px;
+		    width: 120px;
+		    color: #00795f;
+		    background-color: whitesmoke;
+		    
 		    border-radius: 5px;
 		    margin: auto;
 		    text-align: center;
 		    text-decoration: none;
+                    padding: 5px 20px 5px 20px;
 		}
-                .footer li {
-                    color: #212121;
+                
+                .footer a {
+                    color: #101010;
                     font-size: 18px;
                 }
             
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 600px) {
                   li{
                     width: 100%;
                     text-align: left;
                 }
-                a {
-                    width: 100%;
-                    text-align: left;
-                }
+              
+                
                 .handle {
                     display: block;
                 }
@@ -159,7 +186,13 @@ and open the template in the editor.
                 .footer {
                     width: 100%;
                 }
-                
+               
+               
+            }
+            @media screen and (max-width: 700px) {
+                #form {
+                    display: none;
+                }
             }
             
         </style>
@@ -188,10 +221,19 @@ and open the template in the editor.
                
 
             </ul>
+            <form action="#" id="form">
+                <label for "name">Name</label>
+                <input type ="text" id="name"/>
+                <label for "password">Password</label>
+                <input type="text" id="password"/>
+                <input type = "submit" id = "submit">       
+            </form>
              </nav>
         </div>
             <div class ="handle">Menu
-                <button id ="dropdown">dropdown</button></div>
+                <button id ="dropdown">dropdown</button>
+                <button id = "getform">Get Form</button>
+            </div>
         
         <h1 id = "nav">Header Template</h1>
         <p class = "par">
@@ -219,9 +261,9 @@ and open the template in the editor.
             
              <div class = "footer center">
                 <ul>
-                    <li>twitter</li><br>
-                    <li>facebook</li><br>
-                    <li>instagram</li><br>
+                    <li><a href = "#">twitter</a></li>
+                    <li><a href = "#">facebook</a></li>
+                    <li><a href = "#">instagram</a></li>
                     
                 </ul>
             </div>
@@ -229,8 +271,8 @@ and open the template in the editor.
              <div class = "footer right">
                 <ul>
                    
-                    <li>New York</li><br>
-                    <li>Milan</li><br><br>
+                    <li><a href = "#">New York</li></a><br>
+                    <li><a href = "#">Milan</li></a><br>
                     
                 </ul>
             </div>
